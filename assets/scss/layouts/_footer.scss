@@ -11,6 +11,10 @@
             color: $color-white;
             text-transform: uppercase;
             margin: 0 5px;
+
+            &:hover {
+               text-decoration: underline;
+            }
          }
       }
    }

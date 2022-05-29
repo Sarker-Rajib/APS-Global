@@ -3,14 +3,27 @@
       max-width: 220px;
    }
 
-   a{
-      text-transform: uppercase;
-      color: #333333;
-      letter-spacing: 2px;
-      font-weight: bold;
+   .navbar-nav {
+      .nav-link{
+         text-transform: uppercase;
+         color: #333333;
+         letter-spacing: 2px;
+         font-weight: bold;
+         opacity: 1;
 
-      @media (max-width: 991px) {
-         letter-spacing: normal;         
+         &:hover,
+         &.active {
+            color: darken(#333333, 10);
+         }
+   
+         @media (max-width: 991px) {
+            letter-spacing: normal;         
+         }
+   
+         @media (min-width: 992px) {
+            padding-right: 1rem;       
+            padding-left: 1rem;       
+         }
       }
    }
 }
