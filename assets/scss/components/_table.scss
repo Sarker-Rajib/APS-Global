@@ -1,0 +1,177 @@
+@import url(../abstracts/_mixins.scss);
+
+
+.cmcc-model-table{
+   text-align: center;
+   padding: 25px 5px;
+
+
+   .main-table{
+      background: #fff;
+      position: relative;
+      padding-left: 25px;
+
+      &::before{
+         position: absolute;
+         content:"";
+         height: calc(100% + 22px);
+         width: calc(32% + 22px);
+         border: 1px solid #000;
+         right: 65.5%;
+         top: 0;
+      }
+
+      @media screen and (max-width: 767px){
+         &::before{
+            right: 64.8%;
+         }
+      }
+
+         
+      h2{
+         font-family: 'Oswald', sans-serif;
+         @include font-style(30px, 700, #000);
+
+         span{
+            @include font-style(16px, 400, #000);
+         }
+      }
+
+      p{
+         font-family: 'Oswald', sans-serif;
+         @include font-style(16px, 500, #000);
+      }
+
+      .row-first{
+         margin-bottom: 5px;
+         color: #fff;
+
+         .header{
+            font-family: 'Oswald', sans-serif;
+            @include font-style(35px, 700, #000);
+            padding-bottom: 20px;
+
+            @media screen and (max-width: 767px){
+               @include font-style(25px, 700, #000);
+            }            
+         }
+      }
+   
+      .row-second{
+         background: #c0d3d9;
+         margin-bottom: 45px;
+
+         .level-3{
+            background: #0e4b61;
+         }
+      }
+   
+      .row-third{
+         background: #e1efcf;
+         margin-bottom: 45px;
+
+         .level-2{
+            position: relative;
+
+            &::after{
+               content: '';
+               background: #69973f;
+               position: absolute;
+               top: -45px;
+               right: 47px;
+               width: 76.2%;
+               height: 45px;
+               transform: skew(45deg)
+            }
+
+            @media screen and (max-width: 1399px){
+               &::after{
+                  width: 71%;
+               }
+            }
+            @media screen and (max-width: 1199px){
+               &::after{
+                  width: 73%;
+               }
+            }
+            @media screen and (max-width: 991px){
+               &::after{
+                  width: 66.5%;
+               }
+            }
+            @media screen and (max-width: 767px){
+               &::after{
+                  width: 52%;
+               }
+            }
+            @media screen and (max-width: 530px){
+               &::after{
+                  display: none;
+               }
+            }
+
+            .inner-2{
+               height: 100%;
+               background: #8cc640;
+               margin-right: 25px;
+            }
+         }
+      }
+   
+      .row-fourth{
+         background: #e4c4de;
+
+         .level-1{
+            position: relative;
+
+            &::after{
+               content: '';
+               background: #490e43;
+               position: absolute;
+               top: -45px;
+               right: 67px;
+               width: 69.5%;
+               height: 45px;
+               transform: skew(45deg)
+            }
+
+            @media screen and (max-width: 1399px){
+               &::after{
+                  width: 63%;
+               }
+            }
+            @media screen and (max-width: 1199px){
+               &::after{
+                  width: 65%;
+               }
+            }
+            @media screen and (max-width: 991px){
+               &::after{
+                  width: 56%;
+               }
+            }
+            @media screen and (max-width: 767px){
+               &::after{
+                  width: 39%;
+               }
+            }
+            @media screen and (max-width: 530px){
+               &::after{
+                  display: none;
+               }
+            }
+            
+            .inner-2{
+               height: 100%;
+               background: #8cc640;
+               margin-right: 25px;
+            }
+         }         
+
+         .inner-1{
+            background: #902785;
+            margin-right: 45px;
+         }
+      }
+   }
+}

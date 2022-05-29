@@ -1,0 +1,104 @@
+@import url(../abstracts/_mixins.scss);
+
+.home-banner{
+   background: url(../images/banner-images/home-banner.png) no-repeat top left/cover fixed;
+   padding: 200px 0;
+
+   @media screen and (max-width: 765px) {
+      padding: 120px 0;   
+   }
+
+   h1{
+      color: #fff;
+      font-size: 59px;
+      text-shadow: 1px 1px 3px #000;
+   
+      @media screen and (max-width: 765px) {
+         @include font-style(45px, 700, #fff);
+      }
+      
+
+      @media(max-width: 575px) {
+         @include font-style(35px, 700, #fff);
+      }
+   }
+
+   p{
+      color: #f7941d;
+      font-size: 16px;
+      text-shadow: 1px 1px 3px #000;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: 1px;
+
+      @media screen and (max-width: 765px) {
+         @include font-style(12px, 700, #f7941d);
+      }      
+   }
+}
+
+.cmcc-banner{
+   padding: 250px 0;
+   background: url(../images/banner-images/cmcc.png) no-repeat top right/cover fixed;
+
+   @media screen and (max-width: 765px) {
+      padding: 120px 0;   
+      background-position: center;   
+   }
+}
+
+.research-development-banner{
+   padding: 250px 0;
+   background: url(../images/banner-images/researchNdev.jpg) no-repeat top left/cover fixed;
+
+   @media screen and (max-width: 765px) {
+      padding: 120px 0;   
+      background-position: center;   
+   }
+}
+
+
+.cybersecurity-banner{
+   padding: 250px 0;
+   background: url(../images/banner-images/cyber.jpg) no-repeat bottom left/cover fixed;
+
+   @media screen and (max-width: 765px) {
+      padding: 120px 0;   
+      background-position: center;   
+   }
+}
+
+.education-banner{
+   padding: 200px 0;
+   background: url(../images/banner-images/edunTraining.jpg) no-repeat top left/cover fixed;
+
+   @media screen and (max-width: 765px) {
+      padding: 120px 0;   
+      background-position: center;   
+   }
+}
+
+
+.banner-heading{
+   background: #333333;
+   display: inline-block;
+   @include font-style(65px, 700, #fff);
+   padding: 30px;
+   border-radius: 25px;
+   
+   @media screen and (max-width: 991px) {
+      @include font-style(45px, 700, #fff);
+      padding: 22px;
+   }
+   
+   @media screen and (max-width: 765px) {
+      @include font-style(35px, 700, #fff);
+      padding: 22px;
+   }
+   
+
+   @media(max-width: 575px) {
+      @include font-style(25px, 700, #fff);
+      padding: 18px;
+   }
+}
+

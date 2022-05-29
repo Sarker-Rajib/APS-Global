@@ -1,0 +1,16 @@
+.header{
+   .navbar-brand{
+      max-width: 220px;
+   }
+
+   a{
+      text-transform: uppercase;
+      color: #333333;
+      letter-spacing: 2px;
+      font-weight: bold;
+
+      @media (max-width: 991px) {
+         letter-spacing: normal;         
+      }
+   }
+}

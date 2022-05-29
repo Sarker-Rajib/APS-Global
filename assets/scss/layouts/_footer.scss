@@ -1,0 +1,21 @@
+.footer{
+   background: $color-ash-black;
+   padding: 40px 0;
+
+   ul{
+      text-align: center;
+
+      li{
+         display: inline-block;         
+         a{
+            color: $color-white;
+            text-transform: uppercase;
+            margin: 0 5px;
+         }
+      }
+   }
+   
+   .foot-image{
+      max-width: 100px;
+   }
+}
