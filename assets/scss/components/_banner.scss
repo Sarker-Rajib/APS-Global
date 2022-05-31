@@ -1,7 +1,7 @@
 @import url(../abstracts/_mixins.scss);
 
 .home-banner{
-   background: url(../images/banner-images/home-banner.png) no-repeat top left/cover fixed;
+   background: url(../images/banner-images/home-banner.png) no-repeat center center/cover fixed;
    padding: 200px 0;
 
    @media screen and (max-width: 765px) {
@@ -36,9 +36,39 @@
    }
 }
 
+.sm-banner{
+   h1{
+      color: #fff;
+      font-size: 57px;
+      text-shadow: 1px 1px 3px #000;
+   
+      @media screen and (max-width: 765px) {
+         @include font-style(45px, 700, #fff);
+      }
+      
+
+      @media(max-width: 575px) {
+         @include font-style(35px, 700, #fff);
+      }
+   }
+
+   p{
+      color: #f7941d;
+      font-size: 16px;
+      text-shadow: 1px 1px 3px #000;
+      font-family: Helvetica, sans-serif;
+      letter-spacing: 1px;
+
+      @media screen and (max-width: 765px) {
+         @include font-style(12px, 700, #f7941d);
+      }      
+   }
+
+}
+
 .CMMC-banner{
    padding: 250px 0;
-   background: url(../images/banner-images/CMMC.png) no-repeat top right/cover fixed;
+   background: url(../images/banner-images/CMMC.png) no-repeat center center/cover fixed;
 
    @media screen and (max-width: 765px) {
       padding: 120px 0;   
@@ -48,7 +78,7 @@
 
 .research-development-banner{
    padding: 250px 0;
-   background: url(../images/banner-images/researchNdev.jpg) no-repeat top left/cover fixed;
+   background: url(../images/banner-images/researchNdev.jpg) no-repeat  center center/cover fixed;
 
    @media screen and (max-width: 765px) {
       padding: 120px 0;   
@@ -56,10 +86,9 @@
    }
 }
 
-
 .cybersecurity-banner{
    padding: 250px 0;
-   background: url(../images/banner-images/cyber.jpg) no-repeat bottom left/cover fixed;
+   background: url(../images/banner-images/cyber.jpg) no-repeat bottom center/cover fixed;
 
    @media screen and (max-width: 765px) {
       padding: 120px 0;   

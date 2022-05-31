@@ -20,6 +20,8 @@
    border-top-left-radius: 25px;
    margin-top: -25px;
    padding-top: 35px;
+   position: relative;
+   z-index: 999;
 
    .CMMC-content{
       background: url(../images/CMMC.png) no-repeat center center/cover;
@@ -47,10 +49,10 @@
 .card-contents{
 
    .card-wrapper-home{
-      background: url(../images/home-page/bg-globe.png) no-repeat bottom center/contain;
+      background: url(../images/home-page/bg-globe.png) no-repeat left bottom/contain;
       
       @media screen and (max-width: 767px) {
-         background: url(../images/home-page/bg-globe.png) no-repeat center center/contain;
+         background: url(../images/home-page/bg-globe.png) no-repeat left bottom/contain;
       }
 
 
